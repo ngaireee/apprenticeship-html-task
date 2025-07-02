@@ -4,73 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico"  />
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .item {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Profile.html">Profile</a>
-        <a href="MeetTheTeam.html">Meet The Team</a>
-        <a href="SDLC.html">SDLC</a>
-        <a href="MyTeam.html">MyTeam</a>
-        <a href="Communication.html">Communication</a>
-    </nav>
-    <section class="intro-section">
-        <h1 class="intro-title">Profile</h1>
-        <p class="intro-text">
-        <p>Check out the <a href="MeetTheTeam.html">Meet your Coach</a> page and use it as inspiration to build your own profile. We want to know about you and your employer and how you prefer to work so we can help you as best as we possibly can. </p>
-    </section>
-    
-    <section id="about-me">
-        <h2>About Me</h2>
-        <p>Hello! My name is [Your Name]. I am [a brief description about yourself, e.g., "a software developer with a passion for creating intuitive user experiences"]. I work for... </p>
-    </section>
-    
-    <section id="communication">
-        <h2>Ways I Prefer to Communicate</h2>
-        <p>Expain ways you prefer to communicate and why it's effective. For example:</p>
-        <ul>
-            <li>Email: [Your Email Address]</li>
-            <li>Instant Messaging: [Preferred platform, e.g., Slack, Teams]</li>
-            <li>Video Calls: [Preferred platform, e.g., Zoom, Google Meet]</li>
-            <li>In-person: [If applicable, mention your preference for face-to-face communication]</li>
-        </ul>
-    </section>
-    
-    <section id="working-with-me">
-        <h2>How to Work with Me</h2>
-        <p>Here are some tips for working with me effectively:</p>
-        <ul>
-            <li>Be clear and concise in your communication.</li>
-            <li>Provide context when asking questions or assigning tasks.</li>
-            <li>Respect deadlines and communicate any changes promptly.</li>
-            <li>I appreciate constructive feedback and open collaboration.</li>
-        </ul>
-    </section>
-    
-    <section id="past-experience">
-        <h2>Past Experience and CPD</h2>
-        <p>Explain any past experience you've had and how you keep up to date with new technologies:</p>
-        <ul>
-            <li><strong>Previous Roles:</strong> [List your previous roles, e.g., "Junior Developer at XYZ Corp"], or maybe explain that you came to the apprenticeship straight from school/college/A Levels</li>
-            <li><strong>Projects:</strong> [Highlight other projects you've worked on, e.g., "Developed a customer portal for ABC Ltd" or "Made a recipe generator to help me with meal ideas"]</li>
-            <li><strong>Training:</strong> [Mention any relevant training, e.g., "Completed advanced JavaScript course" or "Completed Codewars weekly challenges"]</li>
-        </ul>
-    </section>
-    
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <p>In my free time, I enjoy:</p>
-        <ul>
-            <li>[Hobby 1, e.g., Reading]</li>
-            <li>[Hobby 2, e.g., Hiking]</li>
-            <li>[Hobby 3, e.g., Playing video games]</li>
-            <li>[Hobby 4, e.g., Cooking]</li>
-        </ul>
-    </section>
-    <footer>
-        <p>Just IT</p>
-    </footer>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="MeetTheTeam.html">Meet your Coach</a>
+    <a href="SDLC.html">SDLC</a>
+    <a href="MyTeam.html">My Team</a>
+    <a href="Communication.html">Communication</a>
+</nav>
+<div class="container">
+    <div class="item">
+        <section class="my-profile">
+            <div class="my-profile-picture">
+                <img src="Images/profile/profile.png" alt="Welcome sign cartoon">
+            </div>
+            <h1 class="my-profile">Profile</h1>
+            <p>My name is <b>Ngaire Fitzmaurice</b> and welcome to my profile page!
+                <br>On this page you will find information about myself, how best to contact and communicate with me, my
+                technical experience, and things I enjoy outside of work.
+                <br>I hope you enjoy getting to know me, and please don't hesitate reaching out if you have any
+                questions!</p>
+        </section>
+    </div>
+    <div class="item">
+        <section id="about-me">
+            <div class="my-profile-picture">
+                <img src="Images/profile/me.png" alt="Ngaire's profile picture">
+            </div>
+            <h2>About Me</h2>
+            <p>I am a software engineer with an interest in projects that promote sustainability, social equity, and
+                inclusive innovation. I am currently working towards a Level 4 Software Development apprenticeship.
+                <br>I am currently working for Sainsbury's within the backend Pricing & Promotions team. Our team works
+                within the Commercial Data Services department to help provide our customers with accurate and legal
+                product and pricing information. </p>
+        </section>
+    </div>
+    <div class="item">
+        <section id="communication">
+            <div class="my-profile-picture">
+                <img src="Images/profile/communication.png" alt="People talking cartoon">
+            </div>
+            <h2>Ways I Prefer to Communicate</h2>
+            <p>I highly value clear, direct communication at work. I find that I perform best when expectations and
+                goals are laid out plainly. I am available to contact on Slack, Teams, and Outlook. I appreciate Teams
+                calls where I can ask lots of questions, especially at this point early on in my career.
+                Please find my contact details and preferences below.</p>
+            <ul>
+                <li>Email: <a href="mailto:ngaire.fitzmaurice@sainsburys.co.uk">ngaire.fitzmaurice@sainsburys.co.uk</a>
+                </li>
+                <li>Instant Messaging: Teams</li>
+                <li>Video Calls: Teams</li>
+                <li>In-person: Holborn/Farringdon Sainsbury's SSC</li>
+            </ul>
+        </section>
+    </div>
+    <div class="item">
+        <section id="working">
+            <div class="my-profile-picture">
+                <img src="Images/profile/laptop.png" alt="Laptop cartoon">
+            </div>
+            <h2>Ways of Working</h2>
+            <p>At Sainsbury's, we practice a smarter, flexible way of working. This means that my working hours could
+                differ week to week, however, I make an effort to attend all live meetings when possible as this gives
+                me the opportunity to get answers to my questions quickly. Often, when in meetings with more
+                knowledgeable team members, I request that we record the meeting so that I can re-watch it at a later
+                date to make notes.
+        </section>
+    </div>
+    <div class="item">
+        <section id="experience">
+            <div class="my-profile-picture">
+                <img src="Images/profile/experience.png" alt="Book cartoon">
+            </div>
+            <h2>Experience and Professional Development</h2>
+            <p>Although I have only been working in tech since Jan '25, I have had a keen interest in programming for
+                many years. I was first exposed to coding during my Physics degree at The University of Manchester,
+                where I used Python for data analysis as part of many project, include a project that recreated results
+                found by the LHCb experiment at CERN.
+                Since graduation, I have explored full-stack development and have a particular interest in back-end.</p>
+            <ul>
+                <li><b>Previous Roles:</b> Language Assistant @ British Council, Valencia Spain</li>
+                <li><b>Recent Projects:</b> Price Lookup Tool API, Team Venom @ Sainsbury's</li>
+                <li><b>Training:</b> CFG Full-Stack Degree (Grade: 92%, Distinction)</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="item">
+        <section id="hobbies">
+            <div class="my-profile-picture">
+                <img src="Images/profile/hobbies.png" alt="Sewing machine cartoon.">
+            </div>
+            <h2>Hobbies</h2>
+            <p>Outside of work, I love doing creative activities that help me stay away from screens and allow me to
+                switch off. My favourite activites include:</p>
+            <ul>
+                <li><b>Pottery</b> - I have most experience hand-building, but have recently started throwing using a
+                    wheel.
+                </li>
+                <li><b>Textile Arts</b> - Specifically knitting, crochet, tunisian crochet and sewing. I love being able
+                    to avoid fast-fashion by making my own clothes.
+                </li>
+                <li><b>Reading</b> - I love reading novels that delve into complex human relationships, however, the
+                    next book on my list is 'The New Age of Sexism' by Laura Bates which is about 'How the AI Revolution
+                    is Reinventing Misogyny'.
+                </li>
+                <li><b>Cooking</b> - To help me unwind after a day of work, I love to cook new recipes to enjoy with
+                    friends and family. Recently, I have been trying recipes from the cookbook 'Kin: Caribbean Recipes
+                    for the Modern Kitchen' by Marie Mitchell.
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+<footer>
+    <a href="https://github.com/ngaireee" target="_blank">Check out my GitHub</a>
+</footer>
+
 </body>
 </html>
