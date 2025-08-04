@@ -4,61 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDLC</title>
-    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico"  />
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .item {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Profile.html">Profile</a>
-        <a href="MeetTheTeam.html">Meet your Coach</a>
-        <a href="SDLC.html">SDLC</a>
-        <a href="MyTeam.html">MyTeam</a>
-        <a href="Communication.html">Communication</a>
-    </nav>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="MeetTheTeam.html">Meet your Coach</a>
+    <a href="SDLC.html">SDLC</a>
+    <a href="MyTeam.html">MyTeam</a>
+    <a href="Communication.html">Communication</a>
+</nav>
+
+<div class="item">
     <section class="intro-section">
+        <div class="SDLC-img">
+            <img src="Images/SDLC/SDLC.png" alt="SDLC Icon">
+        </div>
         <h1 class="intro-title">Software Development Life Cycle (SDLC)</h1>
         <p class="intro-text">
-            The Software Development Life Cycle (SDLC) is a structured process used for developing software applications. Explain the stages of the SDLC below, in detail:
+            The Software Development Life Cycle (SDLC) is a structured process used for developing software
+            applications that helps to reduce errors and produce a quality product.
         </p>
     </section>
-
-    <section>
-        <h2><span class="stage-title">Planning</span></h2>
-        <p>Explain the Planning stage of the SDLC here...</p>
-    </section>
-
-    <section>
-        <h2><span class="stage-title">Requirements</span></h2>
-        <p>Explain the Requirements stage of the SDLC here...</p>
-    </section>
-
-    <section>
-        <h2><span class="stage-title">Design</span></h2>
-        <p>Explain the Design stage of the SDLC here...</p>
-    </section>
-
-    <section>
-        <h2><span class="stage-title">Development</span></h2>
-        <p>Explain the Development stage of the SDLC here...</p>
-    </section>
-
-    <section>
-        <h2><span class="stage-title">Testing</span></h2>
-        <p>Explain the Testing stage of the SDLC here...</p>
-    </section>
-
-    <section>
-        <h2><span class="stage-title">Deployment</span></h2>
-        <p>Explain the Deployment stage of the SDLC here...</p>
-    </section>
-
-    <section>
-        <h2><span class="stage-title">Maintenance</span></h2>
-        <p>Explain the Maintenance stage of the SDLC here...</p>
-    </section>
-    <footer>
-        <p>Just IT</p>
-    </footer>
+</div>
+<div class="container">
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/planning.png" alt="planning Icon">
+            </div>
+            <h2><span class="stage-title">Planning</span></h2>
+            <p>The first stage of any development life cycle consists of defining the business case
+                for the project and involves input from all members of the team, including
+                stakeholders, project managers and business analysts. Decisions are made regarding
+                high-level project plans, such as establishing rough budgets and timelines. Risks and
+                constraints of the project are also identified to help evaluate the feasibility of the project.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/requirements.png" alt="requirements Icon">
+            </div>
+            <h2><span class="stage-title">Requirements</span></h2>
+            <p>Once the goals of the project are defined, the project can move into the requirements stage,
+                where the team work together to work out the specific functionality and features of the project.
+                The product owners take the output from the planning stage, along with defined user stories, to
+                determine both the functional and non-functional requirements, and document the use cases. </p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/design.png" alt="design Icon" >
+            </div>
+            <h2><span class="stage-title">Design</span></h2>
+            <p>During the design stage, developers will make key decisions around the technicalities of the project,
+                taking into consideration all the documentation produced during the planning and requirements stages.
+                Developers and architects will work, alongside UX/UI designers if there is a front-end required, to
+                define the tech stack that'll be used, and how the new product will integrate with existing platforms
+                and services. They will also produce wireframes and architecture diagrams which will ensure that
+                everyone
+                involved in the development stage of the lifecycle are clear on the expected output. </p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/development.png" alt="development Icon">
+            </div>
+            <h2><span class="stage-title">Development</span></h2>
+            <p>After the design has been clarified, the developers can get started on writing the code and bringing
+                the product to life. Part of this process includes taking the architectural design and breaking it
+                down into distinct, workable tasks. During this stage, developers will also write unit tests to ensure
+                that the code they are writing is functional and meets the requirements set out in the previous stages.
+                Documentation is also created during this stage to ensure that the code is maintainable and
+                understandable
+                for future developers, and so that the business can understand specific limitations of the system.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/testing.png" alt="testing Icon">
+            </div>
+            <h2><span class="stage-title">Testing</span></h2>
+            <p>Although unit tests are written during the development stage, it is vital that the complete system is
+                tested
+                as a whole before it is released. QA engineers and developers can carry out a range of different tests,
+                such
+                as, performance, security, and end-to-end, to catch bugs and ensure the new product will meet any
+                service
+                level agreements (SLAs - performance and reliability targets agreed with stakeholders) required. It is
+                important that this testing is documented and signed off by senior
+                developers and security managers, so that the business can be assured of the product's quality.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/deployment.png" alt="deployment Icon">
+            </div>
+            <h2><span class="stage-title">Deployment</span></h2>
+            <p>Before the product is deployed straight for use by the user, it must be tested in separate environments,
+                each with differing levels of realism. This is to ensure that the product will work as expected in a
+                live
+                environment. Common patterns of deployments are: development -> staging -> production. The product will
+                often
+                be deployed in a dev environment during the build phase for developers to see how the system performs
+                with low
+                quantities of test data. Then, once ready, the deployment can be moved to the stg environment where
+                production-like
+                data is testing on the system. Only once the product has passed the testing requirements for these
+                stages, and
+                been signed off, can it can be deployed to production. Deploying to prod can include a soft launch,
+                where the
+                product is released to a limited audience for further testing before being fully deployed.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <div class="SDLC-img">
+                <img src="Images/SDLC/maintenance.png" alt="maintenance Icon">
+            </div>
+            <h2><span class="stage-title">Maintenance</span></h2>
+            <p>Alas, once the product is deployed to production, it will require consistent monitoring and maintenance,
+                as
+                well as continuous improvements to keep the tech up to date and give the product longevity. Performance
+                is
+                often monitored via dashboards, with alerts sent to developers or support teams if there are failures.
+                Depending
+                on the type of system built, there might be an option for user feedback on bugs found or improvements to
+                be made,
+                or perhaps interacting systems will implement breaking changes that impact the new product. Then,
+                developers
+                can once again work to fix and update the system, test and deploy new versions.</p>
+        </section>
+    </div>
+</div>
+<footer>
+    <p>Just IT</p>
+</footer>
 </body>
 </html>

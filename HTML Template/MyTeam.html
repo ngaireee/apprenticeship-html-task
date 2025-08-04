@@ -4,50 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Team</title>
-    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico"  />
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .item {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="Images/Icons/favicon.ico"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Profile.html">Profile</a>
-        <a href="MeetTheTeam.html">Meet your Coach</a>
-        <a href="SDLC.html">SDLC</a>
-        <a href="MyTeam.html">MyTeam</a>
-        <a href="Communication.html">Communication</a>
-    </nav>
-    <section class="intro-section">
-        <h1 class="intro-title">Software Development Team Roles and Responsibilities</h1>
-        <p class="intro-text">
-            Explain the key roles and responsibilities within your software development team. Use the examples below if applicable, or add your own.
-        </p>
-    </section>
-    <section>
-        <h2><span class="stage-title">My Role</span></h2>
-        <p>Discuss your role and responsibilities within your Team.</p>
-    </section>
-    <section>
-        <h2><span class="stage-title">Senior Software Engineer</span></h2>
-        <p>Talk about the Senior Software Engineers in your team/wider team and what their responsibilities are.</p>
-    </section>
-    <section>
-        <h2><span class="stage-title">Software Tester</span></h2>
-        <p>Talk about the Software Testers in your team/wider team and what their responsibilities are.</p>
-    </section>
-    <section>
-        <h2><span class="stage-title">Business Analyst (BA)</span></h2>
-        <p>Talk about the Business Analysts in your team/wider team and what their responsibilities are.</p>
-    </section>
-    <section>
-        <h2><span class="stage-title">Product Owner</span></h2>
-        <p>Talk about the Product Owner/s in your team/wider team and what their responsibilities are.</p>
-    </section>
-    <section>
-        <h2><span class="stage-title">UX Designer</span></h2>
-        <p>Talk about the UX Designer/s in your team/wider team and what their responsibilities are.</p>
-    </section>
-    <footer>
-        <p>Just IT</p>
-    </footer>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">Profile</a>
+    <a href="MeetTheTeam.html">Meet your Coach</a>
+    <a href="SDLC.html">SDLC</a>
+    <a href="MyTeam.html">MyTeam</a>
+    <a href="Communication.html">Communication</a>
+</nav>
+<section class="intro-section">
+    <h1 class="intro-title">Team Roles in Venom</h1>
+    <p class="intro-text">
+        My team, Venom, is part of Commercial Data Services at Sainsbury's, and we are responsible for pricing and
+        promotions data. Our goal is to create a singles source of truth for this data, ensuring it is accurate,
+        reliable, and accessible to the business. This page outlines the various roles within Venom, each with
+        differing, complimenting responsibilities.
+    </p>
+</section>
+<div class="container">
+    <div class="item">
+        <section>
+            <h2><span class="stage-title">Associate Engineer</span></h2>
+            <p>As an Associate Engineer, I am one of the more junior members of the team, with fewer responsibilities
+                compared to my more experienced colleagues. My role is primarily focused on learning, exploring new
+                challenges, and contributing fresh perspectives. As a newcomer, I aim to question existing practices
+                constructively and suggest innovative ideas.
+                When I joined the team, my manager provided me with a month dedicated to self-directed learning, which
+                allowed me to build foundational knowledge of our domain and services. Following that, I was assigned a
+                project to take through the full Software Development Life Cycle (SDLC), giving me hands-on experience
+                and a deeper understanding of our workflows. This process also taught me how and when to seek guidance
+                from senior team members.
+                Now that I’ve settled into the team, I regularly pick up tickets like any other engineer. I typically
+                focus on tasks with lower complexity or less time sensitivity, which allows me to continue building
+                confidence and capability while contributing meaningfully to the team’s goals.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <h2><span class="stage-title">Engineer</span></h2>
+            <p>Engineers make up the majority of my team and they are responsible for completing most of the
+                development work. There are currently five engineers in my team, each with differing skill sets, that
+                work together in a supportive way to cover our complex system of services.
+                One of the Engineers I look up to within the team is Alex Lourinha. Alex has always been on hand to
+                support my transition into the team, offering his expertise or pointing me towards another engineer that
+                works on a certain corner of the domain more often. Alex, alongside the other engineers, helps to drive
+                the completion of tickets, whilst taking on the responsibility of writing and maintaining robust
+                services. It is also important that the engineers are commited to never walking past a problem, and
+                invest effort in keeping their work upto date with technical advancements.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <h2><span class="stage-title">Senior Engineer</span></h2>
+            <p>Senior Engineers play a key mentoring role within the team. They support junior engineers in their
+                development and, alongside the Engineering Manager, help shape how the team operates. They also take
+                ownership of system design tasks for projects within our domain.
+
+                In our team, Abhishek Yadav is the current Senior Engineer, and we are in the process of hiring a
+                second. Beyond mentoring and technical leadership, Abhishek takes on significant responsibility for
+                managing incidents that impact our services. He communicates with other teams across Sainsbury’s that
+                rely on our data and contributes to technical decisions that align with and complement the work of
+                surrounding teams. </p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <h2><span class="stage-title">Engineering Manager</span></h2>
+            <p>Engineering Managers are responsible for both the people and the projects within their teams. They play a
+                crucial role in supporting team members’ growth, creating an inclusive culture, and ensuring our work
+                aligns with broader business goals. In addition to managing individual performance and development, they
+                coordinate with other tech teams to plan and deliver projects.
+
+                Prajna Sinha is the Engineering Manager for my team. She leads the direction of our team by overseeing
+                project timelines, and ensuring that we meet the exceptions set out by the business. Prajna also works
+                closely with stakeholders across Sainsbury's to align our work with the wider business goals. Her
+                technical background and leadership skills help maintain a balance between technical skill and team
+                wellbeing, enabling us to grow as engineers while delivering quality solutions.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <h2><span class="stage-title">Product Manager</span></h2>
+            <p>Product Managers (product owners) are responsible for the products produced or managed by the team. They
+                have the most interaction with the business, and help to bridge the gap between business goals, user
+                stories, and technical limitations.
+                Jonas Amaah is the Senior Product Manager for our team. Jonas is present in all of our team's sprint
+                ceremonies, and regular meetings to both ensure that our work meets commitments set by the business, and
+                that technical difficulties can be communicated to stakeholders swiftly when they arise, to catch
+                problems early and save waste time and money. Not having a technical background, Jonas brings the voice
+                of end user to our discussions, whilst still having a strong understanding of the complexities of our
+                services that he can communicate to stakeholders. As the product owner of these services, Jonas also
+                takes the responsibility of keeping our priorities in order, and helps to protect our team from being
+                pulled away from the product vision.</p>
+        </section>
+    </div>
+    <div class="item">
+        <section>
+            <h2><span class="stage-title">Staff Engineer</span></h2>
+            <p>Staff Engineers typically work across multiple teams, offering technical mentorship and helping lead
+                strategic change across tech. They hold responsibilities for things such as system architectures,
+                engineering cultures and practices, for teams that sit across the business.
+                We currently have a staff engineer, Brian Forkan, as member of our team as we take on the first step of
+                the Core Commercial Transformation (CCT). This is large company-wide transformation project that will
+                see us move away from legacy systems, towards a future-fit solution. Brian is currently in the process
+                of defining and documenting how this transformation will impact our services. This will then allow him
+                to develop a strategic plan to mitigate disruptions, and identify areas where we can introduce breaking
+                changes now to optimize long-term efficiency and adaptability. His leadership ensures that our technical
+                decisions are forward-looking and aligned with the broader transformation goals.</p>
+        </section>
+    </div>
+</div>
+<footer>
+    <p>Just IT</p>
+</footer>
 </body>
 </html>
